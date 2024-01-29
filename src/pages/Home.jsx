@@ -16,12 +16,6 @@ import NotFound from "../assets/img/NotFound.gif";
 // import { SearchContext } from "../App";
 
 function Home() {
-
-
- 
-
-  // console.log(window.location)
-
   // ?Переменные из стейта Redux
   // const {search} = useContext(SearchContext);
   const search = useSelector((state) => state.search.value);
