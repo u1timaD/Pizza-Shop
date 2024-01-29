@@ -1,0 +1,42 @@
+.wrapper {
+	position: relative;
+}
+
+.search {
+	border: 1px solid grey;
+	padding: 15px 40px;
+	padding-left: 45px;
+	border-radius: 15px;
+	opacity: 0.3;
+	font-size: 20px;
+
+
+	&:focus {
+		opacity: 1;
+	}
+
+	&:focus + img {
+		opacity: 1;
+	}
+}
+
+.img {
+	top: 15px;
+	left: 10px;
+	position: absolute;
+	opacity: 0.2;
+	width: 30px;
+	height: 30px;
+}
+
+.cross {
+	position: absolute;
+	top: 15px;
+	right: 10px;
+	opacity: 0.3;
+	cursor: pointer;
+
+	&:hover {
+		opacity: 1;
+	}
+}
