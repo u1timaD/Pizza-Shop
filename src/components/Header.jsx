@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import PizzaLogo from "../assets/img/pizza-logo.svg";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, Outlet } from "react-router-dom";
 import Search from "./Search";
 import { useSelector } from "react-redux";
 
@@ -16,7 +16,7 @@ function Header() {
   return (
     <div className="header">
       <div className="container">
-        <Link to="/Pizza-Shop">
+        <Link to="/">
           <div className="header__logo">
             <img width="38" src={PizzaLogo} alt="Pizza logo" />
             <div>
@@ -65,6 +65,7 @@ function Header() {
           </div>
         )}
       </div>
+      <Outlet />
     </div>
   );
 }

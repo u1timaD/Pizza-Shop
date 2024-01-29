@@ -130,7 +130,7 @@ function Cart() {
         </div>
         <div className="cart__bottom-buttons">
           <Link
-            to="/Pizza-Shop"
+            to="/"
             className="button button--outline button--add go-back-btn"
           >
             <svg

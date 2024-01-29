@@ -12,19 +12,18 @@ import FullPizza from "./pages/FullPizza";
 function App() {
   // const [search, setSearch] = useState('');
 
-
-
   return (
     <div className="wrapper">
       <div className="content">
         <div className="container">
           {/* <SearchContext.Provider value={{ search, setSearch }}> */}
-          <Header />
           <Routes>
-            <Route path="/Pizza-Shop" element={<Home />} />
-            <Route path="*" element={<NotFound />} />
-            <Route path="/cart" element={<Cart />} />
-            <Route path="/pizza/:id" element={<FullPizza />} />
+            <Route path="/" element={<Header />}>
+              <Route path="/" element={<Home />} />
+              <Route path="*" element={<NotFound />} />
+              <Route path="/cart" element={<Cart />} />
+              <Route path="/pizza/:id" element={<FullPizza />} />
+            </Route>
           </Routes>
           {/* </SearchContext.Provider> */}
         </div>

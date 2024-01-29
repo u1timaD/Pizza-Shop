@@ -10,7 +10,7 @@ function NotFoundBlock({NotFoundImg}) {
       </h2>
       <p>Для того, чтобы заказать пиццу, перейди на главную страницу.</p>
       <img src={NotFoundImg} alt="Empty cart" />
-      <Link to="/Pizza-Shop" className={`button button--black ${styles.buttonGreen}`}>
+      <Link to="/" className={`button button--black ${styles.buttonGreen}`}>
         <span>Вернуться назад</span>
       </Link>
     </>
